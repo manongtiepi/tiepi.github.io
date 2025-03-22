@@ -11,7 +11,8 @@ const noTexts = [
     "要不再想想？", 
     "不许选这个！ ", 
     "我会很伤心…", 
-    "不行:("
+    "不行:(",
+    "再考虑考虑嘛QAQ”
 ];
 
 // No 按钮点击事件
@@ -31,8 +32,8 @@ noButton.addEventListener("click", function() {
     mainImage.style.transform = `translateY(-${moveUp}px)`;
     questionText.style.transform = `translateY(-${moveUp}px)`;
 
-    // No 文案变化（前 5 次变化）
-    if (clickCount <= 5) {
+    // No 文案变化（前 6 次变化）
+    if (clickCount <= 6) {
         noButton.innerText = noTexts[clickCount - 1];
     }
 
